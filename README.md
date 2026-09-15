@@ -131,7 +131,7 @@ O CSR contém informações que serão utilizadas para gerar o certificado do se
 openssl req -new
 -key server.key
 -out server.csr
--subj "/C=BR/ST=Sao Paulo/O=MyLab/CN=192.168.1.104"
+-subj "/C=BR/ST=CIDADE/O=MyLab/CN=seu.ip.aqui"
 ```
 O CSR pode ser visualizado com:
 ```
@@ -339,7 +339,7 @@ Subject Alternative Name, quando configurado.
 A relação esperada é:
 ```
 Subject:
-    192.168.1.104 (Ip da minha máquina)
+    localhost (Ip da minha máquina)
 
 Issuer:
     MyLab Root CA
